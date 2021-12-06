@@ -1,0 +1,24 @@
+:root {
+  --dark-blue: #161f33;
+  --light-dark-blue: #1e2a49;
+  --blue: #1778e5;
+  --light-blue: #66a5e1;
+  --geyser: #d0d7e1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background: var(--dark-blue);
+  width: 100vw;
+  height: 100vh;
+}
+
+.App h1 {
+  color: white;
+}
