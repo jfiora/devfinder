@@ -1,5 +1,10 @@
 import React from "react";
 import "./user.css";
+import StatItem from "../statItem/statItem";
+import locationIcon from "../../images/icon-location.svg";
+import linkIcon from "../../images/icon-website.svg";
+import twitterIcon from "../../images/icon-twitter.svg";
+import companyIcon from "../../images/icon-company.svg";
 
 const User = ({ user }) => {
   function formatDate() {
@@ -37,7 +42,12 @@ const User = ({ user }) => {
             <span>{user.following}</span>
           </div>
         </div>
-        <div className="user__links"></div>
+        <div className="user__links">
+          <StatItem img={locationIcon} value={user.location} />
+          <StatItem img={twitterIcon} value={user.twitter_username} />
+          <StatItem img={linkIcon} value={user.html_url} />
+          <StatItem img={companyIcon} value={user.company} />
+        </div>
       </div>
     </div>
   );

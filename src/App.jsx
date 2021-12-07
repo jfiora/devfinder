@@ -5,7 +5,7 @@ import Content from "./components/content/content";
 function App() {
   return (
     <div className="App">
-      <h1>devfinder</h1>
+      <h1 className="custom__title">devfinder</h1>
       <Content />
     </div>
   );

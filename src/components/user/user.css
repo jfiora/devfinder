@@ -85,3 +85,19 @@
   font-size: 1.3rem;
   font-weight: 700;
 }
+
+.user__links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user__link {
+  flex: 0 0 50%;
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.user__link span {
+  margin-left: 10px;
+}
