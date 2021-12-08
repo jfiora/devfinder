@@ -1,11 +1,12 @@
 import "./App.css";
 import React from "react";
+import Header from "./components/header/header";
 import Content from "./components/content/content";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="custom__title">devfinder</h1>
+      <Header />
       <Content />
     </div>
   );

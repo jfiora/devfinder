@@ -1,0 +1,7 @@
+.header__logo {
+  flex: 50%;
+}
+
+.toggle-btn {
+  float: right;
+}

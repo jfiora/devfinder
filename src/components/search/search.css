@@ -37,3 +37,9 @@
   margin-right: 10px;
   cursor: pointer;
 }
+
+.search-button:hover {
+  background-color: #1e2a49;
+  transition: ease-in 0.3s;
+  border: 1px solid white;
+}
