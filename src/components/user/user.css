@@ -93,11 +93,15 @@
 }
 
 .user__link {
-  flex: 0 0 50%;
+  flex: 50%;
   font-size: 0.85rem;
   margin-top: 1.5rem;
+  overflow: hidden;
 }
 
 .user__link span {
+  width: 100%;
   margin-left: 10px;
+  position: relative;
+  top: -5px;
 }

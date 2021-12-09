@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sunIcon from "../../images/icon-sun.svg";
 import moonIcon from "../../images/icon-moon.svg";
+import "./header.css";
 
 const Header = () => {
   const [show, setShow] = useState(false);

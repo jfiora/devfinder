@@ -1,7 +1,26 @@
+.header {
+  display: flex;
+}
+
 .header__logo {
   flex: 50%;
 }
 
-.toggle-btn {
-  float: right;
+.toggle-btn__btn {
+  background: transparent;
+  border: none;
+}
+
+.toggle-btn__btn span {
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 1.2rem;
+}
+
+.toggle-btn__btn img {
+  position: relative;
+  top: 5px;
 }
