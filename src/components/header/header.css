@@ -20,6 +20,10 @@
   margin-right: 1.2rem;
 }
 
+body.dark .toggle-btn__btn span {
+  color: #000;
+}
+
 .toggle-btn__btn img {
   position: relative;
   top: 5px;

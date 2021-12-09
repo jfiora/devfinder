@@ -6,6 +6,10 @@ import "./header.css";
 const Header = () => {
   const [show, setShow] = useState(false);
 
+  useEffect(() => {
+    document.body.classList.toggle("dark", show);
+  }, [show]);
+
   return (
     <div className="header">
       <div className="header__logo">

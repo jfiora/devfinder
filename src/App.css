@@ -23,9 +23,17 @@ body {
   justify-content: center;
 }
 
+body.dark {
+  background: white;
+}
+
 .custom__title {
   font-size: 1.7rem;
   color: white;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+
+body.dark .custom__title {
+  color: black;
 }
