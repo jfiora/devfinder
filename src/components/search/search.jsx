@@ -6,9 +6,13 @@ const Search = ({ sendDataToParent }) => {
   const [searchValue, setSearchValue] = React.useState("");
 
   const getUser = async () => {
-    const response = await fetch(`https://api.github.com/users/${searchValue}`),
-      data = await response.json();
-    sendDataToParent(data);
+    if (searchValue !== "") {
+      const response = await fetch(
+        `https://api.github.com/search/users?q=${searchValue}`
+      );
+      const data = await response.json();
+      sendDataToParent(data);
+    }
   };
 
   return (

@@ -61,3 +61,7 @@ body.dark .search-bar input::placeholder {
   transition: ease-in 0.3s;
   border: 1px solid white;
 }
+
+body.dark .search-button:hover {
+  background-color: var(--text);
+}
