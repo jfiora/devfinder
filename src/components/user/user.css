@@ -134,6 +134,7 @@ body.dark .user__stat span {
   margin-left: 10px;
   position: relative;
   top: -5px;
+  overflow-wrap: anywhere;
 }
 
 body.dark #occuped span {
