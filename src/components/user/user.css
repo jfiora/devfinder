@@ -1,10 +1,24 @@
+:root {
+  --dark-blue: #161f33;
+  --light-dark-blue: #1e2a49;
+  --blue: #1778e5;
+  --light-blue: #66a5e1;
+  --geyser: #d0d7e1;
+  --text: #4b6a9b;
+}
+
 .user__card {
   width: 800px;
   height: 500px;
-  background-color: #1e2a49;
+  background-color: var(--light-dark-blue);
   border-radius: 15px;
   margin-top: 2rem;
   display: flex;
+}
+
+body.dark .user__card {
+  background-color: white;
+  box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3);
 }
 
 .user__avatar {
@@ -37,10 +51,18 @@
   color: #fff;
 }
 
+body.dark .user__name {
+  color: var(--text);
+}
+
 .user__joined {
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
+}
+
+body.dark .user__joined {
+  color: var(--text);
 }
 
 .user__bio {
@@ -49,7 +71,7 @@
 
 .user__bio a {
   text-decoration: none;
-  color: #66a5e1;
+  color: var(--light-blue);
   font-size: 1.1rem;
 }
 
@@ -64,8 +86,12 @@
   height: 20%;
   margin-top: 2.5rem;
   display: flex;
-  background-color: #161f33;
+  background-color: var(--dark-blue);
   border-radius: 10px;
+}
+
+body.dark .user__stats {
+  background-color: var(--geyser);
 }
 
 .user__stat {
@@ -86,6 +112,10 @@
   font-weight: 700;
 }
 
+body.dark .user__stat span {
+  color: var(--text);
+}
+
 .user__links {
   margin-top: 1rem;
   display: flex;
@@ -104,4 +134,8 @@
   margin-left: 10px;
   position: relative;
   top: -5px;
+}
+
+body.dark #occuped span {
+  color: var(--text);
 }

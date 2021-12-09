@@ -4,6 +4,7 @@
   --blue: #1778e5;
   --light-blue: #66a5e1;
   --geyser: #d0d7e1;
+  --text: #4b6a9b;
 }
 
 * {
@@ -30,10 +31,10 @@ body.dark {
 .custom__title {
   font-size: 1.7rem;
   color: white;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
 body.dark .custom__title {
-  color: black;
+  color: var(--text);
 }

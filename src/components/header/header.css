@@ -1,3 +1,7 @@
+:root {
+  --text: #4b6a9b;
+}
+
 .header {
   display: flex;
 }
@@ -9,19 +13,20 @@
 .toggle-btn__btn {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .toggle-btn__btn span {
   color: #fff;
-  font-size: 0.8rem;
-  letter-spacing: 4px;
+  font-size: 1rem;
+  letter-spacing: 3px;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 1.2rem;
 }
 
 body.dark .toggle-btn__btn span {
-  color: #000;
+  color: var(--text);
 }
 
 .toggle-btn__btn img {

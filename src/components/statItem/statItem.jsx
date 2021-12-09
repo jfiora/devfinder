@@ -3,7 +3,7 @@ import React from "react";
 const StatItem = ({ img, value }) => {
   if (value) {
     return (
-      <div className="user__link" style={{ color: "white" }}>
+      <div className="user__link" id="occuped" style={{ color: "white" }}>
         <img src={img} alt="location icon" style={{ color: "white" }} />
         <span>{value}</span>
       </div>
