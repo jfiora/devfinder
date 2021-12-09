@@ -25,7 +25,7 @@ const User = ({ user }) => {
           <h2 className="user__joined">Joined {formatDate()}</h2>
         </div>
         <div className="user__bio">
-          <a href={"https://github.com/" + user.login}>@{user.login}</a>
+          <a href={user.html_url}>@{user.login}</a>
           <p>{user.bio != null ? user.bio : "This profile has no bio"}</p>
         </div>
         <div className="user__stats">
@@ -45,7 +45,7 @@ const User = ({ user }) => {
         <div className="user__links">
           <StatItem img={locationIcon} value={user.location} />
           <StatItem img={twitterIcon} value={user.twitter_username} />
-          <StatItem img={linkIcon} value={user.html_url} />
+          <StatItem img={linkIcon} value={user.blog} />
           <StatItem img={companyIcon} value={user.company} />
         </div>
       </div>

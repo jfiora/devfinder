@@ -16,6 +16,7 @@ const Content = () => {
     created_at: "2011-01-25T18:44:36Z",
     followers: 4205,
     following: 9,
+    blog: "https://github.blog",
   });
 
   React.useEffect(() => {
