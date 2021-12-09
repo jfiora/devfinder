@@ -8,9 +8,9 @@ const Search = ({ sendDataToParent }) => {
   const getUser = async () => {
     if (searchValue !== "") {
       const response = await fetch(
-        `https://api.github.com/search/users?q=${searchValue}`
-      );
-      const data = await response.json();
+          `https://api.github.com/users/${searchValue}`
+        ),
+        data = await response.json();
       sendDataToParent(data);
     }
   };

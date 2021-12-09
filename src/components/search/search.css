@@ -36,6 +36,10 @@ body.dark .search-bar {
   padding-left: 1rem;
 }
 
+body.dark .search-bar input {
+  color: var(--text);
+}
+
 .search-bar input::placeholder {
   color: white;
 }
